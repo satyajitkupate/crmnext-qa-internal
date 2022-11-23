@@ -142,7 +142,7 @@ public class LeadProcess extends BaseDriver {
 		Thread.sleep(3000);
 		eleAcceptRadioBtn.click();
 		eleNextBtn.click();
-		// test commit on 23 Nov 7:8 PM
+		// test commit on 23 Nov 11:30 PM
 	}
 	
 	
