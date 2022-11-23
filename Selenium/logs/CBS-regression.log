@@ -1,0 +1,426 @@
+[INFO ] 2022-07-25 12:19:46.832 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 12:20:14.017 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 12:20:14.136 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 12:20:58.189 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (fa4906741edf620d14782a1c1d388b24)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 12:20:58.191 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 12:20:58.351 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 12:20:58.352 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 12:22:55.085 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 12:23:45.248 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 12:23:45.350 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[ERROR] 2022-07-25 12:24:28.870 [main] BaseDriver - Catching
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@title='Leads']' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271) ~[selenium-support-3.11.0.jar:?]
+	at com.sn.config.BaseDriver.waitForElementToBeClickable(BaseDriver.java:208) ~[classes/:?]
+	at executetests.Salesforce.createLead(Salesforce.java:138) ~[test-classes/:?]
+	at executetests.Salesforce.createNewLead(Salesforce.java:271) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.4.0.jar:7.4.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:794) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestRunner.run(TestRunner.java:596) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1063) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestNG.run(TestNG.java:1031) ~[testng-7.4.0.jar:7.4.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283) ~[surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75) ~[surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120) ~[surefire-testng-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Leads']"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'PG02QJ2V', ip: '192.168.92.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\skt8403\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49268}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2e7b3ee5b5ce7b78f73642e1c7296d5
+*** Element info: {Using=xpath, value=//a[@title='Leads']}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361) ~[selenium-api-3.11.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-3.11.0.jar:?]
+	at jdk.proxy2.$Proxy28.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248) ~[selenium-support-3.11.0.jar:?]
+	... 35 more
+[INFO ] 2022-07-25 12:24:48.948 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 12:24:49.039 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 12:24:49.040 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 14:06:59.009 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 14:07:20.017 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:07:20.140 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 14:07:57.585 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (c89ea0cc74245968c559abd703e65e04)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 14:07:57.588 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:07:57.738 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 14:07:57.739 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 14:08:41.018 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 14:09:06.145 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:09:06.272 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 14:09:44.419 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:09:44.535 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 14:09:44.535 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 14:12:32.765 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 14:12:53.888 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:12:54.020 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 14:13:35.328 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (0cde10a4343dcfb32462fd1fc174cb36)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 14:13:35.330 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:13:35.467 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 14:13:35.468 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 14:28:04.337 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 14:28:25.394 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:28:25.505 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 14:28:25.509 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 14:31:12.032 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 14:31:33.224 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:31:33.351 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 14:31:33.352 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 14:32:16.118 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 14:32:16.209 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 14:32:16.210 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 14:32:24.438 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 14:32:24.538 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 14:32:24.540 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 14:32:42.696 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 14:32:42.792 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 14:32:42.794 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 14:37:25.110 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 14:38:26.680 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:38:31.746 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 14:38:31.748 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 14:39:48.333 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 14:39:48.400 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 14:40:13.179 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 14:40:36.713 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:40:36.817 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 14:40:36.820 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 14:43:33.262 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 14:43:55.056 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:43:55.152 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 14:44:33.392 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (e9b2e7d2e5369a5908a33350b223a326)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 14:44:33.396 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:44:33.511 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 14:44:33.512 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 14:56:43.772 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 14:57:06.045 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:57:06.156 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 14:57:49.124 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (1b657ee3dcc7058f44db4dc9d1200882)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 14:57:49.127 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:57:49.250 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 14:57:49.251 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 14:59:32.349 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 14:59:54.896 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 14:59:54.997 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 15:00:38.430 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (93e31add4718c3251998372fb6377e13)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 15:00:38.434 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:00:38.612 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 15:00:38.613 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 15:05:04.608 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 15:05:25.706 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:05:25.830 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 15:06:11.399 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (ae0c7a5c1f67c15b6bfa9d4f10626e4a)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 15:06:11.539 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:06:11.747 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 15:06:11.749 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 15:14:57.099 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 15:15:21.496 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:15:21.607 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 15:16:09.266 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (9908773d1fab3617ac143366fc31d3c2)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 15:16:09.426 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:16:13.719 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:16:13.848 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 15:16:13.849 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 15:32:12.781 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 15:32:35.352 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:32:35.511 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 15:33:18.202 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (eff6e5e37cfbba6f5347e0e21f169c92)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 15:33:18.316 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:33:22.866 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:33:23.086 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 15:33:23.087 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 15:34:15.317 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 15:34:36.404 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:34:36.505 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 15:35:15.858 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (8a79f4c295103b7c27e4cd30ceb69fc6)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 15:35:16.003 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:35:20.378 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:35:20.510 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 15:35:20.511 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 15:40:12.658 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 15:40:50.171 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:40:50.416 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 15:41:26.781 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (e7d682077023700af4799c3dbd0f8f72)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 15:41:26.917 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:41:31.318 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:41:31.425 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 15:41:31.426 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 15:43:06.538 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 15:43:28.679 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:43:28.799 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 15:44:07.931 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (90942e1c3764fac81946aca624605cb4)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 15:44:08.073 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:44:14.464 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:44:14.574 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 15:44:14.575 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 15:46:54.416 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 15:47:21.562 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:47:21.662 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 15:47:57.475 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (0c869d80f8e72adcb2f0b4964745e35b)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 15:47:57.652 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:48:03.980 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:48:04.086 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 15:48:04.087 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 15:51:30.111 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 15:51:52.675 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:51:52.788 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 15:52:30.396 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (c75d47ef885897e275c730ea20522f5e)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 15:52:30.536 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:52:36.938 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:52:37.096 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 15:52:37.097 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 15:55:06.003 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 15:55:32.305 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:55:32.406 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 15:56:15.894 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (c6ba6a03622e40f5568ef7fbdcf42949)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 15:56:16.064 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:56:22.496 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:56:22.626 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 15:56:22.627 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 15:57:54.021 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 15:58:18.626 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:58:18.731 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 15:58:54.748 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (a0cb4fceea1d8795f9c22da62aacba8a)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 15:58:54.908 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:59:01.331 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 15:59:01.443 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 15:59:01.443 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 16:15:56.456 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 16:16:17.130 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:16:17.221 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 16:17:02.932 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (2b865c1fa73bc5b775bb7e34a61fd082)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 16:17:03.043 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:17:09.380 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:17:09.489 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 16:17:09.490 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 16:19:46.369 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 16:20:10.378 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:20:10.464 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 16:20:48.847 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (e9b7eaecd4eb819dbd3e20ca2ff1bf04)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 16:20:48.965 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:20:55.305 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:20:55.405 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 16:20:55.406 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 16:22:53.193 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 16:23:18.095 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:23:18.183 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 16:24:04.413 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:24:24.426 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 16:24:29.655 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:24:29.862 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 16:24:29.862 [main] BaseDriver - AfterTest executed
+[ERROR] 2022-07-25 16:26:04.375 [main] BaseDriver - Catching
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@title='Leads']' (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271) ~[selenium-support-3.11.0.jar:?]
+	at com.sn.config.BaseDriver.waitForElementVisibility(BaseDriver.java:228) ~[classes/:?]
+	at executetests.LeadProcess.loginToSalesforce(LeadProcess.java:121) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.4.0.jar:7.4.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:794) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestRunner.run(TestRunner.java:596) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1063) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestNG.run(TestNG.java:1031) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) ~[testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251) ~[testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77) ~[testng-remote.jar:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Leads']"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'PG02QJ2V', ip: '192.168.92.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\skt8403\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 78538f96d409b80a751c1df74183c2bb
+*** Element info: {Using=xpath, value=//a[@title='Leads']}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361) ~[selenium-api-3.11.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-3.11.0.jar:?]
+	at jdk.proxy2.$Proxy31.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248) ~[selenium-support-3.11.0.jar:?]
+	... 30 more
+[INFO ] 2022-07-25 16:26:04.388 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:26:04.476 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 16:26:29.480 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:26:35.534 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 16:26:41.692 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 16:26:41.692 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 16:27:21.502 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:27:21.594 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 16:27:55.525 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (e18a49fdd562027b38612d450c23de44)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 16:27:55.683 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:28:02.058 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:28:02.185 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 16:28:02.186 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 16:31:48.311 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 16:32:12.436 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:32:12.527 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 16:32:54.065 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (ad8940afdb70f3cb43d61a4295c6e46c)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 16:32:54.203 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:33:21.469 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:33:21.613 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 16:33:21.615 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 16:35:07.819 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 16:35:28.197 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:35:28.293 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 16:36:05.457 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (24cf09a988d37b2ebe2e4f7b94681af2)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 16:36:05.700 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:36:33.018 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:36:33.123 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 16:36:33.123 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 16:46:19.214 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 16:46:37.450 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:46:37.534 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 16:47:13.488 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (a1414def1657979c1dda18527f461a08)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 16:47:13.626 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:47:20.952 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:47:21.073 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 16:47:21.074 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 16:48:18.545 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 16:48:37.041 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:48:37.164 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 16:49:14.684 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (f145bc02fe8d2a383d5b31fc212ba4d4)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 16:49:14.820 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:49:17.161 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:49:17.257 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 16:49:17.257 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 16:49:59.854 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 16:50:21.743 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:50:21.846 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 16:50:56.903 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (6ff652401c9c01676d1eb43675457dcf)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 16:50:57.051 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:51:00.363 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:51:00.502 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 16:51:00.503 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 16:52:08.763 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 16:52:28.827 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:52:28.929 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 16:53:13.488 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (40966c317cf08635c9da5d392c154b8b)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 16:53:13.613 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:53:36.923 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:53:37.103 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 16:53:37.104 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 16:55:27.810 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 16:55:48.487 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:55:48.612 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 16:56:36.457 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (6a5f4e5a2a0b09d5dac6b9543315348c)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 16:56:36.588 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:56:59.870 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 16:56:59.981 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 16:56:59.982 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 17:35:33.789 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 17:36:01.502 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 17:36:01.586 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 17:36:36.706 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (736792e94eff83db5027853775a0ef92)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 17:36:36.872 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 17:37:00.129 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 17:37:00.286 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 17:37:00.287 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 18:40:29.054 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 18:40:53.760 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 18:40:53.857 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 18:41:39.008 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (242c4c87d42fef2b2dec6feedb26b351)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 18:41:39.151 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 18:41:42.471 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 18:41:42.587 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 18:41:42.588 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 18:42:48.915 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 18:43:09.791 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 18:43:09.884 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 18:43:51.854 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (6c7b251a862cf875b5df5c27f5badf57)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 18:43:52.012 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 18:43:55.483 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 18:43:55.626 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 18:43:55.628 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-25 18:44:29.260 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-25 18:44:52.024 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 18:44:52.110 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Documents\Selenium Automation\CRMNext_Maven\CRMNext\TestData\TestData.xlsx
+[INFO ] 2022-07-25 18:45:29.215 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (2aa0575ddbed42c7e68d4d8275f4cc8b)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-07-25 18:45:29.357 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 18:45:32.714 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-25 18:45:32.848 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-25 18:45:32.849 [main] BaseDriver - AfterTest executed
